@@ -115,7 +115,7 @@ _wcslen(wchar_t* s) {
 	string.MaximumLength = string.Length; \
 	string.Buffer = (PCHAR)buffer
 
-ULONG_PTR LoadDLL(PBYTE pbModule, DWORD dwFunctionHash, LPVOID lpUserData, DWORD dwUserdataLen, PVOID pvShellcodeBase, DWORD dwFlags)
+ULONG_PTR LoadDLL(PBYTE pbModule, DWORD dwFunctionHash, LPVOID lpUserData, DWORD dwUserdataLen, DWORD dwFlags, PVOID pvShellcodeBase)
 {
 	#pragma warning( push )
 	#pragma warning( disable : 4055 ) // Ignore cast warnings
